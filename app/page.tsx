@@ -69,8 +69,8 @@ const CameraPlayer = dynamic(() => import("@/components/LiveStream"), {
 export default function Dashboard() {
 
   const cameras = [
-    { id: "camera1", title: "Camera 1 ()" },
-    { id: "camera2", title: "Camera 2 ()" },
+    { id: "camera1", title: "Camera 1" },
+    { id: "camera2", title: "Camera 2" },
     { id: "camera3", title: "Fortune Office (IP Camera 203)" },
     { id: "camera4", title: "Fortune Office (IP Camera 204)" },
     { id: "camera5", title: "Fortune Office (IP Camera 205)" },
