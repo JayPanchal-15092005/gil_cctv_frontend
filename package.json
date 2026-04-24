@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "reset:cameras": "node ./scripts/manageCameras.js reset ./scripts/cameras_to_create.json",
+    "list:cameras": "node ./scripts/manageCameras.js list"
   },
   "dependencies": {
     "hls.js": "^1.6.15",
