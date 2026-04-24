@@ -145,7 +145,7 @@ export default function FaceDetectionPage() {
       } catch (error) {
         console.error("Detection error:", error);
       }
-    });
+    }, 500);
 
     return () => {
       if (detectionIntervalRef.current) {

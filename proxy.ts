@@ -4,13 +4,12 @@ import { AUTH_COOKIE_NAME } from "@/lib/auth";
 
 const publicRoutes = new Set(["/login"]);
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   if (
     pathname.startsWith("/_next") ||
     pathname.startsWith("/api/") ||
-    pathname.startsWith("/api/auth") ||
     pathname.startsWith("/favicon.ico") ||
     pathname.includes(".")
   ) {
